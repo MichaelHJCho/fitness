@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.michael.fitness.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Hello, Michael!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/helloTextView"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:text="Total Distance Walked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalDistanceLabel"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalDistanceValue"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalFeedback"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dailyFeedback"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:text="Distance Walked Today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceTodayLabel"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceTodayValue"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:text="Last Updated Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastUpdatedLabel"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="--"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationTime"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/horizontalLinear"
+            android:gravity="center_horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <TextView
+                    android:text="Latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latitudeLabel"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:text="--"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latitude"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <TextView
+                    android:text="Longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/longitudeLabel"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="--"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/longitude"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
